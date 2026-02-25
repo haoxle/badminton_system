@@ -3,7 +3,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 DB_FILE = BASE_DIR / "badminton.db"
-SCHEMA_FILE = BASE_DIR / "schema.sql"
+SCHEMA_FILE = BASE_DIR / "database" / "schema.sql"
 
 def get_db_connection() -> sqlite3.Connection:
     conn = sqlite3.connect(DB_FILE)
